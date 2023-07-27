@@ -1,14 +1,127 @@
 <html>
+
 <head>
   <title>My GitHub.io Website</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
   <h1>
-    Welcome to My GitHub.io Website!
+    <!-- TITLE OF PAGE -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h1> Discover More </h1>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col">
+          <h4>lbecker95@utexas.edu </h4>
+        </div>
+        <div class="col">
+          <h4> Logan A. Becker </h4>
+        </div>
+        <div class="col">
+          <h4> University of Texas At Austin </h4>
+        </div>
+      </div>
+    </div>
   </h1>
-      <div class="horizontal_line"></div>
-	    <div class="line"></div>
-  <p>This is a basic example.</p>
+  <hr class="class-1" />
+
+  <!-- TASKBAR -->
+  <div class="container-sm text-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="cv.html">CV</a>
+            <a class="nav-link" href="outreach.html">Outreach</a>
+            <a class="nav-link" href="research.html">Research</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br>
+  <!-- My Intro Card -->
+  <div class="card mb-3 border-0" style="max-width: 100%;">
+    <div class="row g-0 justify-content-center">
+      <div class="col-md-2 text-center">
+        <img src="faceimg2.jpg" class="img-fluid rounded-start" alt="..." style="width:200px">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title">About Logan</h2>
+          <class="card-text">Logan received his bachelors in science at Stony Brook University in 2017 for both
+            Physics and Astronomy. Afterwards he continued his education at Stony Brook where he obtained his Masters in
+            Neuroscience and Behavior in 2019 while working under Dr. Memming Park. His masters thesis focused on
+            developing a novel stochastic model that can capture a wide breath of spiking variability that can be tuned
+            to both over- and under-dispersed firing behavior. During the time of his Masters, Logan interned at Dr.
+            Mathew Wilsons lab at MIT, working under Dr. Carmen Varela where he analyzed the pharmacological effects of
+            non-benzodiazepines (eszopiclone and zolpidem) on hippocampal LIF ripple activity. Currently Logan is
+            enrolled as a PhD student at the University of Texas at Austin where he is working under Dr. Thibaud
+            Taillefumier.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Research Card -->
+  <div class="card mb-3 border-0" style="max-width: 100%;">
+    <div class="row g-0 justify-content-center">
+      <div class="col-md-7">
+        <div class="card-body">
+          <h2 class="card-title">Research Interest</h2>
+          <class="card-text">Logans scientific interest is focused on the development of biophysically inspired models
+            that leverages statistical methods to explain neural processes. Specifically, Logans current work is
+            centered around understanding neural variability. It is commonly observed and accepted that neurons fire at
+            near random time intervals, of which this spiking variability is hypothesized to be due to the fluctuations
+            present in the underlying membrane potential. Traditional models explain the irregularity through
+            asynchronous balanced networks. These models have shown success at properly describing the spiking
+            variability but often lack a valid description of the underlying membrane potential fluctuations. Our work
+            aims to extend these models and incorporate low-level synchronized inputs which is hypothesized to provide a
+            more biophysically accurate depiction of the neural networks observed in vivo.
+        </div>
+      </div>
+      <div class="col-md-2 text-center">
+        <img src="resinterest.jpg" class="img-fluid rounded-start" alt="..." style="width:200px">
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 border-0" style="max-width: 100%;">
+    <div class="row g-0 justify-content-center">
+      <div class="col-md-2 text-center">
+        <img src="outreachimg.png" class="img-fluid rounded-start" alt="..." style="width:250px">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h2 class="card-title">Outreach</h2>
+          <class="card-text">Logans scientific interest is focused on the development of biophysically inspired models
+            that leverages statistical methods to explain neural processes. Specifically, Logans current work is
+            centered around understanding neural variability. It is commonly observed and accepted that neurons fire at
+            near random time intervals, of which this spiking variability is hypothesized to be due to the fluctuations
+            present in the underlying membrane potential. Traditional models explain the irregularity through
+            asynchronous balanced networks. These models have shown success at properly describing the spiking
+            variability but often lack a valid description of the underlying membrane potential fluctuations. Our work
+            aims to extend these models and incorporate low-level synchronized inputs which is hypothesized to provide a
+            more biophysically accurate depiction of the neural networks observed in vivo. See <a href="outreach.html">
+              Outreach Experience and Events here </a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>

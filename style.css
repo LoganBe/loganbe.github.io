@@ -1,28 +1,76 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #FFFFFF;
+  background-color: white;
 }
 
 h1 {
   color: #333;
   text-align: center;
+  font-size: 30pt;
 }
 
 p {
-  color: #777;
+  color: #333;
+  font-size: 20pt;
+}
+
+hr {
+  border: none;
+  height: 10px;
+  background-color: black;
+  margin: 50px 0;
+}
+
+hr.class-1 {
+  height: 10px
 }
 
 .horizontal_line {
-          background-color: white;
-        	width: 100%;
-        	height: 5px;
-            border-top: 5px dotted white;
-            line-height: 100%;
-    	}
- 
-    	.line {
-            border-bottom: 5px solid black;
-            margin-top: 5px;
-        	width: 100%;
-    	}
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 5px;
+  border-top: 5px;
+  line-height: 100%;
+}
 
+.line {
+  border-bottom: 5px solid black;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.box {
+  width: 100%;
+  height: 155px;
+  background-color: #f2f2f2;
+  border: 10px solid #000000;
+  padding: 0px;
+}
+
+.words {
+  color: #333;
+  margin-top: 12px;
+  font-size: 20pt;
+  display: flex;
+  justify-content: space-around;
+}
+
+.brush-script {
+  font-family: "Brush Script MT", cursive;
+  font-size: 50pt
+}
+
+.image {
+  float: left;
+  margin-left: 50px;
+}
+
+.image-container {
+  position: relative;
+  left: 1000px;
+}
+
+.word-container {
+  display: flex;
+  left: 200px;
+}
