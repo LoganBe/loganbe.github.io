@@ -95,3 +95,9 @@ hr.class-1 {
 .carousel-caption {
   background: rgba(250, 250, 250, 0.8);
 }
+
+.peopleCarouselImg img {
+  width: auto;
+  height: 350px;
+  max-height: 350px;
+}
