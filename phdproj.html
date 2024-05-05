@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
         #map {
-            height: 400px;
-            margin: 0 auto;
-            width: 80%;
+            height: 600px;
+            margin-left: 40px;
+            width: 60%;
         }
     </style>
 </head>
@@ -21,7 +21,7 @@
 <body>
   <div class="container text-center">
     <h1>
-      Curriculum Vitae
+      Data Project
     </h1>
   </div>
 
@@ -34,10 +34,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="cv.html">CV</a>
-            <a class="nav-link" href="outreach.html">Outreach</a>
-            <a class="nav-link" href="research.html">Research</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="cv.html">CV</a>
+              <a class="nav-link" href="outreach.html">Outreach</a>
+              <a class="nav-link" href="research.html">Research</a>
+              <a class="nav-link" href="#">Data Projects</a>
           </div>
         </div>
       </div>
@@ -46,13 +47,19 @@
 
 <hr>
 
+ <div class="container-sm">
+    <!-- What is Neuro -->
+    <h3> <b> Influence of PhD program on faculty position </b> </h3>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin metus eu porttitor congue. Phasellus congue pulvinar leo non laoreet. Mauris placerat ultrices sapien, et convallis justo pulvinar fringilla. Aliquam non ex tortor. Integer tempor pharetra molestie. Donec tellus erat, pharetra eu felis quis, laoreet dignissim mi. Ut non nulla in nisi pretium pellentesque eu eu lectus. Praesent nec urna vestibulum, porttitor turpis id, pharetra nisl. Morbi rhoncus lorem dignissim augue auctor fringilla. Donec rhoncus tristique nibh, in ultrices dolor commodo non. Morbi nec ex erat. Sed ut mollis urna, sit amet gravida dui. Morbi feugiat nisl eu metus accumsan semper. Pellentesque fringilla tincidunt venenatis. Curabitur nec mi eget elit tincidunt sodales a ut est. Integer mollis quam non augue aliquam, ut iaculis dolor dignissim. 
+    <br> <br>
+</div>
 <div id="map"></div>
     
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.curve/0.1.1/leaflet.curve.js"></script>
 <script>
       // Initialize the map
-      var map = L.map('map').setView([30, -97], 5);
+      var map = L.map('map').setView([30, -97], 4);
 
       // Add the tile layer (you can use different tile layers)
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
