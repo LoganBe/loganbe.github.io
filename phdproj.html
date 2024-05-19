@@ -15,6 +15,23 @@
             margin-left: 300px;
             width: 40%;
         }
+
+        #image-popup {
+            display: none; /* Hide by default */
+            position: absolute;
+            top: 425px;
+            right: 300px;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        #image-popup img {
+            max-width: 500px;
+            max-height: 1000px;
+        }
     </style>
 </head>
 
@@ -62,6 +79,7 @@
         <br> <br>
     </div>
     <div id="map"></div>
+    <div id="image-popup"></div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.curve/0.1.1/leaflet.curve.js"></script>
@@ -91,7 +109,19 @@
             iconAnchor: [12, 41],
             popupAnchor: [1, -34],
         });
-
+        
+        marker0.on('click', function() {
+            var imagePopup = document.getElementById('image-popup');
+              if (imagePopup.style.display === 'block') {
+                // If the image popup is visible, hide it
+                imagePopup.style.display = 'none';
+              } else {
+                // If the image popup is hidden, show it and set the image
+                imagePopup.innerHTML = '<img src="AustinDelRank.png">';
+                imagePopup.style.display = 'block';
+              }
+        });
+        
         fetch('mapdataaustin.json')
             .then(response => response.json())
             .then(data => {
@@ -99,7 +129,7 @@
                 data.forEach(function (obj) {
                     var marker = L.marker([obj.Lat, obj.Long], {icon: redMarker});
                     marker.setOpacity(0.5);
-                    marker0.on('click', function (e) {
+                    marker0.on('click', function () {
                         // Remove existing arrows
                         if (map.hasLayer(marker)) {
                             map.removeLayer(marker);
