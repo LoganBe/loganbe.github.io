@@ -101,3 +101,11 @@ hr.class-1 {
   height: 350px;
   max-height: 350px;
 }
+
+.text-justify {
+  text-align: justify;
+}
+
+.nav-link.active {
+  color: red !important;
+}
