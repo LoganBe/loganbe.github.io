@@ -23,21 +23,19 @@
 <div class="container-sm text-center">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="index.html">Home</a>
-          <a class="nav-link" href="cv.html">CV</a>
-          <a class="nav-link" href="outreach.html">Outreach</a>
-          <a class="nav-link" href="research.html">Research</a>
-          <a class="nav-link" href="dataproj_temp.html">Data Projects</a>
-          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}" 
+             aria-current="page" href="{{ '/' | relative_url }}">Home</a>
+          <a class="nav-link {% if page.url == '/cv/' or page.url == '/cv.html' %}active{% endif %}" 
+             href="{{ '/cv/' | relative_url }}">CV</a>
         </div>
       </div>
     </div>
   </nav>
 </div>
+
