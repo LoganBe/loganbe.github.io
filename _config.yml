@@ -2,3 +2,4 @@ title: Logan Becker
 description: My personal website
 baseurl: "" # For loganbe.github.io
 url: "https://loganbe.github.io"
+theme: null
