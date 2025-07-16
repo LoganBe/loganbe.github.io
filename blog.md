@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: blog
+permalink: /blog/
 ---
 
   <div class="container-sm">

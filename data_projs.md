@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: Data_Projs
+permalink: /data_projs/
 ---
 
   <div class="container-sm">
