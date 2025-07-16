@@ -133,20 +133,11 @@ hr.class-1 {
 }
 
 .header-text {
-  font-size: 2rem !important;
+  font-size: clamp(1.2rem,5vw,2rem) !important;
 }
 
 .discover-more-text{
-  font-size: 4rem !important;
-}
-
-@media (max-width: 576px) {
-  .header-text {
-    font-size: 1.2rem !important;
-  }
-  .discover-more-text{
-   font-size: 2rem !important;
- }
+  font-size: clamp(2rem,10vw,4rem) !important;
 }
 
 
