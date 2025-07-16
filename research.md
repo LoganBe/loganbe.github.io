@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home
+title: Research
+permalink: /research/
 ---
   <div class="container-fluid">
     <div class="card mb-2 border-0">
