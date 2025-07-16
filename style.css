@@ -140,4 +140,14 @@ hr.class-1 {
   font-size: 4rem !important;
 }
 
+@media (max-width: 576px) {
+  .header-text {
+    font-size: 1.2rem !important;
+  }
+  .discover-more-text{
+   font-size: 2rem !important;
+ }
+}
+
+
 	
