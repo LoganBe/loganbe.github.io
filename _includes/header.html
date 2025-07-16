@@ -2,18 +2,18 @@
 <div class="container text-center">
   <div class="row">
     <div class="col">
-      <h1> Discover More </h1>
+      <div class = "discover-more-text"> Discover More </div>
     </div>
   </div>
-  <div class="row mt-1">
+  <div class="row mt-1 style="font-size: 20 !important;">
     <div class="col">
-      <h4>loganbe.18@gmail.com </h4>
+      <div class="header-text">loganbe.18@gmail.com</div> 
+   </div>
+    <div class="col">
+       <div class="header-text"> Logan A. Becker, PhD </div>
     </div>
     <div class="col">
-      <h4> Logan A. Becker </h4>
-    </div>
-    <div class="col">
-      <h4> University of Texas At Austin </h4>
+       <div class="header-text"> Graduate Researcher </div>
     </div>
   </div>
 </div>
@@ -30,9 +30,17 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link {% if page.url == '/' or page.url == '/index.html' %}active{% endif %}" 
-             aria-current="page" href="{{ '/' | relative_url }}">Home</a>
+             aria-current="page" href="{{ '/' | relative_url }}" style="font-size: 1.5rem;">Home</a>
           <a class="nav-link {% if page.url == '/cv/' or page.url == '/cv.html' %}active{% endif %}" 
-             href="{{ '/cv/' | relative_url }}">CV</a>
+             href="{{ '/cv/' | relative_url }}"style="font-size: 1.5rem;">CV</a>
+          <a class="nav-link {% if page.url == '/outreach/' or page.url == '/outreach.html' %}active{% endif %}" 
+             href="{{ '/outreach/' | relative_url }}"style="font-size: 1.5rem;">Outreach</a>
+          <a class="nav-link {% if page.url == '/research/' or page.url == '/research.html' %}active{% endif %}" 
+             href="{{ '/research/' | relative_url }}"style="font-size: 1.5rem;">Research</a>
+           <a class="nav-link {% if page.url == '/data_projs/' or page.url == '/data_projs.html' %}active{% endif %}" 
+             href="{{ '/data_projs/' | relative_url }}"style="font-size: 1.5rem;">Data Projects</a>
+          <a class="nav-link {% if page.url == '/blog/' or page.url == '/blog.html' %}active{% endif %}" 
+             href="{{ '/blog/' | relative_url }}"style="font-size: 1.5rem;">Blog</a>
         </div>
       </div>
     </div>

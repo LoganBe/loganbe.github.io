@@ -4,9 +4,9 @@ title: Home
 ---
 
 <!-- My Intro Card -->
-<div class="card mb-2 border-0" style="max-width: 100%;">
+<div class="card mb-2 border-0 about-me-card" style="max-width: 100%;">
   <div class="row g-0 justify-content-center">
-    <div class="col-md-4 text-center">
+    <div class="col-md-4 d-flex align-items-center">
       <img src="faceimg3.png" class="img-fluid rounded-start" alt="..." style="width:300px">
     </div>
     <div class="col-md-6">
@@ -23,15 +23,15 @@ title: Home
               neural variability.
 
               Beyond research, I am deeply committed to science outreach. I served as the Science Outreach Coordinator
-              for the UT Austin Neuroscience Graduate Program for two years, organizing events to make neuroscience
-              accessible and engaging to the broader community..        </div>
+              for the UT Austin N	euroscience Graduate Program for two years, organizing events to make neuroscience
+              accessible and engaging to the broader community.       </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Research Card -->
-<div class="card mb-3 border-0" style="max-width: 100%;">
+<div class="card mb-3 border-0 about-me-card" style="max-width: 100%;">
   <div class="row g-0 justify-content-center">
     <div class="col-md-6">
       <div class="card-body text-justify">
@@ -47,17 +47,17 @@ title: Home
               neuroscience, statistical analysis, and machine learning.        </div>
       </div>
     </div>
-    <div class="col-md-4 text-center">
-      <img src="fig_summary.png" class="img-fluid rounded-start" alt="..." style="width:1000px">
+    <div class="col-md-4 d-flex align-items-center">
+      <img src="fig_summary.png" class="img-fluid rounded-start" alt="..." style="width:540px; max-width: none;">
     </div>
   </div>
 </div>
 
 <!-- Outreach Card -->
-<div class="card mb-3 border-0" style="max-width: 100%;">
+<div class="card mb-3 border-0 about-me-card" style="max-width: 100%;">
   <div class="row g-0 justify-content-center">
-    <div class="col-md-4 text-center">
-      <img src="outreachimg.png" class="img-fluid rounded-start" alt="..." style="width:300px">
+    <div class="col-md-4 d-flex align-items-center">
+      <img src="outreachimg.png" class="img-fluid rounded-start" alt="..." style="width:400px">
     </div>
     <div class="col-md-6">
       <div class="card-body text-justify">

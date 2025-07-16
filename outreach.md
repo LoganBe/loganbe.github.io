@@ -1,28 +1,29 @@
 ---
-layout: page
+layout: default
 title: Neuroscience Outreach
 permalink: /outreach/
 ---
 
-## What is Neuroscience?
+# What is Neuroscience?
 
 Neuroscience is an interdisciplinary field that focuses on studying the structure and function of the brain. The brain harbors an immense number of mysteries that we still do not yet understand such as:
 
-- What causes neurological issues such as epilepsy or Alzheimer’s?
-- How does the brain process information about the environment?
-- What is consciousness?
+1) What causes neurological issues such as epilepsy or Alzheimer’s? 
+
+2) How does the brain process information about the environment?
+
+3) What is consciousness?
 
 These questions have inspired people from a variety of fields of study—such as biology, physics, psychology, computer science, engineering, and mathematics—to come together in the attempt to understand how the brain works.
 
 ---
+# Our Mission
 
-## Our Mission
+### We want to bring Neuroscience to you! The brain is something we all have, and we should all become a little bit more familiar with it. That is where we come in.
 
-We want to bring Neuroscience to you! The brain is something we all have, and we should all become a little bit more familiar with it. That is where we come in.
+## At the University of Texas at Austin, we have a committed and dedicated group of graduate students from the Institute of Neuroscience who aim to share their knowledge about the brain with everyone. These are students who have extensively studied the brain and are currently conducting their own research!
 
-At the University of Texas at Austin, we have a committed and dedicated group of graduate students from the Institute of Neuroscience who aim to share their knowledge about the brain with everyone. These are students who have extensively studied the brain and are currently conducting their own research!
-
-We offer a free program called **NeuReach**, open to all schools and ages, with hands-on Neuroscience demonstrations and presentations to educate and inspire students to pursue STEM education.
+## We offer a free program called **NeuReach**, open to all schools and ages, with hands-on Neuroscience demonstrations and presentations to educate and inspire students to pursue STEM education.
 
 ---
 
@@ -54,25 +55,37 @@ Through our neuroscience demonstrations, students get hands-on exposure to neuro
 <div class="container">
   <div class="row g-0 justify-content-center">
     <div class="col-md-6">
-      <div id="exampleoutreach" class="carousel carousel-dark slide">
+      <div id="exampleoutreach" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active peopleCarouselImg">
-            <img src="outbrain2.jpg" class="d-block w-100" alt="Brain Anatomy">
+            <img src="/assets/images/outbrain2.jpg" class="d-block w-100" alt="Brain Anatomy">
             <div class="carousel-caption d-none d-md-block"><h2>Brain Anatomy</h2></div>
           </div>
           <div class="carousel-item peopleCarouselImg">
-            <img src="outnerve2.jpg" class="d-block w-100" alt="Electrical Activity of Nerves">
+            <img src="/assets/images/outnerve2.jpg" class="d-block w-100" alt="Electrical Activity of Nerves">
             <div class="carousel-caption d-none d-md-block"><h2>Electrical Activity of Nerves</h2></div>
           </div>
           <div class="carousel-item peopleCarouselImg">
-            <img src="outadapt2.jpg" class="d-block w-100" alt="Visual Adaptation">
+            <img src="/assets/images/outadapt2.jpg" class="d-block w-100" alt="Visual Adaptation">
             <div class="carousel-caption d-none d-md-block"><h2>Visual Adaptation</h2></div>
           </div>
         </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#exampleoutreach" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#exampleoutreach" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
       </div>
     </div>
   </div>
 </div>
+
 
 ---
 
@@ -92,7 +105,7 @@ In this talk, we:
 **Location**: Classroom with HDMI projector  
 **Audience**: Elementary or middle school students
 
-<img src="expdesflow.png" width="400" alt="Scientific Method Flowchart">
+<img src="/assets/images/expdesflow.png" width="400" alt="Scientific Method Flowchart">
 
 ---
 
@@ -127,5 +140,5 @@ We look forward to hearing from you—and helping everyone *Discover More* about
 ## Our Team
 
 <div class="text-center">
-  <img src="outreach_team.png" width="400" alt="Outreach Team">
+  <img src="/assets/images/outreach_team.png" width="400" alt="Outreach Team">
 </div>
