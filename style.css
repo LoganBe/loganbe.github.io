@@ -1,7 +1,7 @@
 body {
   font-family: "Times New Roman", Times, serif !important;
   background-color: white;
-  font-size: clamp(1rem,5vw,1.2rem) !important;
+  font-size: clamp(1rem,5vw,1.5rem) !important;
   }
 
 h1 {
@@ -139,6 +139,7 @@ hr.class-1 {
 .discover-more-text{
   font-size: clamp(2rem,10vw,4rem) !important;
 }
+
 
 
 	
