@@ -126,7 +126,7 @@ Both correlation analysis and permutation testing reveal that certain factors, p
 
 <div class = "text-center">
       <h4 class="fw-bold" style="font-size: 2.5rem; color: #E97451; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-        Linear Regression Predictive Rate of 85%
+        Logistic Regression Predictive Rate of 85%
       </h4>
     </div>
 <div class="container my-4 mb-4">
@@ -146,7 +146,7 @@ Both correlation analysis and permutation testing reveal that certain factors, p
 
 <div class = "text-center">
       <h4 class="fw-bold" style="font-size: 2.5rem; color: #E97451; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-        Linear Regression Predictive Rate of 100%
+       Random Forrest Regression Predictive Rate of 100%
       </h4>
     </div>
 <div class="container my-4 mb-4">
