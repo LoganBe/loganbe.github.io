@@ -16,15 +16,19 @@ title: Home
               understanding the brain through computational and mathematical modeling. I earned my BS in Physics and
               Astronomy in 2017 and an MS in Neurobiology in 2019 from Stony Brook University, where I developed a
               biophysically inspired neuronal model to predict spike timing patterns with large inter-spike intervals.
-
+	     <br><br>
               From 2019-2020 I worked as a Technical Associate at MIT, where I investigated the pharmacological effects
               of non-benzodiazepine compounds on brain rhythms in rodent models. Currently, I am pursuing a PhD in
               Neuroscience at UT Austin, where I use advanced computational tools to study how input synchrony shapes
               neural variability.
-
+	     <br><br>
               Beyond research, I am deeply committed to science outreach. I served as the Science Outreach Coordinator
               for the UT Austin N	euroscience Graduate Program for two years, organizing events to make neuroscience
-              accessible and engaging to the broader community.       </div>
+              accessible and engaging to the broader community.
+              <br><br>
+              For more information about my work and history see my <a href="/cv" class="fw-bold text-decoration-underline">C.V</a>.
+      
+               </div>
       </div>
     </div>
   </div>
@@ -44,7 +48,10 @@ title: Home
               activity, with an emphasis on the mechanisms that shape their variability and reliability. This work
               addresses a fundamental question in neuroscience: how the structure of inputs gives rise to the rich
               diversity of neural dynamics observed in the brain. My approach integrates tools from computational
-              neuroscience, statistical analysis, and machine learning.        </div>
+              neuroscience, statistical analysis, and machine learning.       
+              <br><br>
+              For an overview of my research and links to my papers see my <a href="/research" class="fw-bold text-decoration-underline">Research</a>.
+               </div>
       </div>
     </div>
     <div class="col-md-4 d-flex align-items-center">
@@ -69,7 +76,10 @@ title: Home
               process among elementary and middle school students, as well as the broader community. Through interactive
               visual demonstrations and engaging presentations, I helped make complex neuroscience concepts accessible
               and exciting, with the goal of inspiring the next generation of scientists and promoting public trust in
-              science.        </div>
+              science.       
+               <br><br>
+              For detailed over view of outreach projects  see <a href="/outreach" class="fw-bold text-decoration-underline">Outreach</a>.
+               </div>
       </div>
     </div>
   </div>

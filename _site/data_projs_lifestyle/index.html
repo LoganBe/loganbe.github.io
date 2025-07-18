@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Data_Projs_LifeStyle | Logan Becker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class = "discover-more-text"> Discover More </div>
+    </div>
+  </div>
+  <div class="row mt-1;">
+    <div class="col">
+      <div class="header-text">loganbe.18@gmail.com</div> 
+   </div>
+    <div class="col">
+       <div class="header-text"> Logan A. Becker, PhD </div>
+    </div>
+    <div class="col">
+       <div class="header-text"> Graduate Researcher </div>
+    </div>
+  </div>
+</div>
+<hr class="class-1" />
+
+<!-- Navbar -->
+<div class="container-sm text-center">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " 
+             aria-current="page" href="/" style="font-size: 1.5rem;">Home</a>
+          <a class="nav-link " 
+             href="/cv/"style="font-size: 1.5rem;">CV</a>
+          <a class="nav-link " 
+             href="/research/"style="font-size: 1.5rem;">Research</a>
+          <a class="nav-link " 
+             href="/outreach/"style="font-size: 1.5rem;">Outreach</a>
+           <a class="nav-link " 
+             href="/data_projs/"style="font-size: 1.5rem;">Data Projects</a>
+          <a class="nav-link " 
+             href="/blog/"style="font-size: 1.5rem;">Blog</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+  <main class="container mt-3">
+    <h1 class="text-start"> Analysis of Student Activities on Grades and Stress </h1>
+<h4 id="data-source-kaggle-data-set">Data Source: <a href="https://www.kaggle.com/datasets/steve1215rogg/student-lifestyle-dataset" target="_blank" rel="noopener noreferrer">Kaggle Data Set</a></h4>
+<p><br /></p>
+<div class="container-fluid p-0 m-0 mb-4">
+Students’ academic performance and stress levels are shaped by a range of interconnected factors, including study habits, sleep quality, participation in extracurricular activities, physical exercise, and social interactions. Understanding how these elements contribute to both grades and stress is crucial for developing strategies to support student well-being and success. In the following analysis, I investigate the impact of these variables on student outcomes using survey data collected from approximately 2,000 primarily Indian students over the academic year spanning August 2023 to May 2024. This dataset provides a comprehensive view of students’ experiences and behaviors, allowing for an in-depth exploration of the relationships between lifestyle factors, stress, and academic achievement.
+</div>
+
+<h2 id="raw-data-statistics-and-visualizations">Raw Data Statistics and Visualizations</h2>
+<div class="container my-4 mb-4">
+  <div class="row">
+    <!-- Left Column: Table -->
+    <div class="col-md-6 d-flex align-items-stretch">
+      <table class="table table-bordered table-sm w-100 mb-0 align-self-stretch">
+        <thead class="table-light">
+          <tr>
+            <th>Feature</th>
+            <th>Min</th>
+            <th>Max</th>
+            <th>Median</th>
+            <th>Average</th>
+            <th>Std</th>
+          </tr>
+        </thead>
+        <tbody style="height: 100%;">
+          <tr style="height: 16.66%;"><td>Study (hours)</td><td>5.0</td><td>10.0</td><td>7.4</td><td>7.48</td><td>1.42</td></tr>
+          <tr style="height: 16.66%;"><td>Extracurricular (hours)</td><td>0.0</td><td>4.0</td><td>2.0</td><td>1.99</td><td>1.16</td></tr>
+          <tr style="height: 16.66%;"><td>Sleep (hours)</td><td>5.0</td><td>10.0</td><td>7.5</td><td>7.50</td><td>1.46</td></tr>
+          <tr style="height: 16.66%;"><td>Socia (hours) </td><td>0.0</td><td>6.0</td><td>2.6</td><td>2.7</td><td>1.69</td></tr>
+          <tr style="height: 16.66%;"><td>Physical (hours)</td><td>0.0</td><td>13.0</td><td>4.1</td><td>4.33</td><td>2.51</td></tr>
+          <tr style="height: 16.66%;"><td>Grade (GPA)</td><td>2.24</td><td>4.0</td><td>3.11</td><td>3.12</td><td>0.30</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/RawDistCorr.png" class="img-fluid" style="max-height: 100%; width: 100%;" alt="RawData" />
+    </div>
+  </div>
+</div>
+<h3 id="-overview-"><u> Overview </u></h3>
+<div class="container-fluid p-0 m-0 mb-4">
+The distributions of Study, Extracurricular, and Sleep variables are generally uniform in shape, indicating consistent behavior across the sample. Social hours exhibit a nearly uniform distribution as well, with a slight skew towards higher social engagement. Physical activity, on the other hand, shows a pronounced right skew but does not fit well with common parametric distributions such as lognormal or gamma. Grades, contrastingly, approximate a normal distribution, reflecting a balanced spread around the mean.<br /><br />
+	
+Correlation analysis reveals mostly weak or negligible relationships among these factors, with two notable exceptions: physical activity and studying. Physical activity shows weak correlations with all other variables, suggesting that increased time spent on exercise may come at the expense of other pursuits. Unsurprisingly, the strongest observed association is between studying and grades, highlighting that greater study time is linked with higher academic performance. <br /><br />
+
+To provide a clearer picture of how these variables distribute across different levels, I grouped each factor into three categories, low, medium, and high, by dividing their range (maximum minus minimum) into three equal intervals. This simple categorization allows for easy visualization and interpretation. The following pie charts illustrate the proportion of students falling into each level for the respective factors, offering an accessible overview of the data’s structure before deeper analysis.
+</div>
+
+<div class="border rounded p-2" style="max-height: 100%; width: 100%; display: inline-block;">
+  <img src="/assets/images/lifestyle/FractionPies.png" class="img-fluid" style="max-height: 100%; width: 100%;" alt="RawData" />
+</div>
+
+<div class="container my-4 mb-4">
+  <div class="row align-items-center">
+    <!-- Left Column: Text -->
+    <div class="col-md-6 text-center">
+      <h2 class="display-5 fw-bold text-black" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+        Most of the students reported<br />a high level of stress
+      </h2>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/FractionStressPie.png" alt="StressPie" style="max-height: 100%; width: 100%;" />
+    </div>
+  </div>
+</div>
+<p><br /></p>
+<h2 id="data-analysis">Data Analysis</h2>
+<div class="container-fluid p-0 m-0 mb-4">
+Next, I investigate the relationship between each activity-related factor and student stress levels, aiming to address the question: Does increased engagement in various activities contribute to higher or lower stress? To explore this, the data for each activity, such as studying, sleeping, socializing, and exercising, was binned according to students' reported stress levels. This binning process allowed for a direct comparison of activity patterns across low, moderate, and high stress groups. To assess whether the differences observed between stress levels were statistically meaningful, I conducted a permutation test with 1,000 iterations for each factor. This non-parametric approach provides a robust evaluation of whether any apparent trends are likely due to chance or reflect a true underlying relationship between activity levels and student stress.
+</div>
+
+<div class="container my-4 mb-4">
+  <div class="row align-items-center">
+    <!-- Left Column: Text -->
+    <!-- Right Column: Image -->
+    <div class="col-md-7 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/SigStress_Activity.png" alt="StressPie" style="max-height: 100%; width: 100%;" />
+    </div>
+    
+        <div class="col-md-5 text-center">
+	<h4 class="fw-bold" style="font-size: 2.5rem; color: #0047AB; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+        More Studying and Higher GPA With High Stress <br /><br />
+        More Sleep and Physical Activity With Low Stress <br /><br />
+        Extracurricular and Social Weakly Relates to Stress
+      </h4>
+    </div>
+  </div>
+</div>
+
+<h3 id="-predictors-of-stress-"><u> Predictors of Stress </u></h3>
+<div class="container-fluid p-0 m-0 mb-4">
+Both correlation analysis and permutation testing reveal that certain factors, particularly study time and sleep time, are closely linked to student stress levels. Building on these findings, I now turn to regression-based modeling to explore a more predictive perspective: <em> To what extent can these lifestyle factors anticipate a student’s level of stress?</em> By leveraging regression techniques, this next phase of the analysis aims to quantify how strongly each variable contributes to stress and assess the overall predictive power of the model. 
+</div>
+
+<h3 id="-linear-regression-"><strong> Linear Regression: </strong></h3>
+
+<div class="text-center">
+      <h4 class="fw-bold" style="font-size: 2.5rem; color: #E97451; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+        Linear Regression Predictive Rate of 75%
+      </h4>
+    </div>
+<div class="container my-4 mb-4">
+  <div class="row align-items-center">
+
+
+    <div class="col-md-6 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/Linear_Reg_Stress.png" alt="LinearRef" style="max-height: 100%; width: 100%;" />
+    </div>
+    
+     <div class="col-md-6 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/Linear_Conf_Mat.png" alt="LinearRef" style="max-height: 100%; width: 100%;" />
+    </div>
+  </div>
+</div>
+
+<h3 id="-logistic-regression-"><strong> Logistic Regression: </strong></h3>
+
+<div class="text-center">
+      <h4 class="fw-bold" style="font-size: 2.5rem; color: #E97451; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+        Logistic Regression Predictive Rate of 85%
+      </h4>
+    </div>
+<div class="container my-4 mb-4">
+  <div class="row align-items-center">
+  
+    <div class="col-md-6 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/LogReg_Import_Stress.png" alt="LinearRef" style="max-height: 100%; width: 100%;" />
+    </div>
+    
+     <div class="col-md-6 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/LogReg_Conf_Stress.png" alt="LinearRef" style="max-height: 100%; width: 100%;" />
+    </div>
+  </div>
+</div>
+
+<h3 id="-random-forrest-regression-"><strong> Random Forrest Regression: </strong></h3>
+
+<div class="text-center">
+      <h4 class="fw-bold" style="font-size: 2.5rem; color: #E97451; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+       Random Forrest Regression Predictive Rate of 100%
+      </h4>
+    </div>
+<div class="container my-4 mb-4">
+  <div class="row align-items-center">
+  
+    <div class="col-md-6 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/RanFor_Import_Stress.png" alt="LinearRef" style="max-height: 100%; width: 100%;" />
+    </div>
+    
+     <div class="col-md-6 d-flex align-items-center justify-content-center mb-4">
+      <img src="/assets/images/lifestyle/RanFor_Conf_Stress.png" alt="LinearRef" style="max-height: 100%; width: 100%;" />
+    </div>
+  </div>
+</div>
+
+<h2 id="results-summary">Results Summary</h2>
+<div class="container-fluid p-0 m-0 mb-4">
+In my analysis, I applied basic regression techniques to assess how various student activities predict stress levels. The results align with initial data exploration, reinforcing strong relationships between studying, sleep, and stress. Specifically, the findings suggest that:
+<br /><br />
+<div class="text-center">
+	<h4 class="fw-bold" style="font-size: 2.5rem; text-black; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+ 	Stress increases with time studying and decreases with time sleeping
+	 </h4>
+	 </div>
+	 <br />
+Among the models tested, the Random Forest provided the highest predictive performance, achieving 100% accuracy on the test data, substantially outperforming the logistic regression (85%) and linear regression (75%) models. One of the most notable differences lies in how the models prioritize features: the Random Forest places significantly more importance on Grades, suggesting it views academic performance as a stronger predictor of stress. This likely reflects a confounding relationship between Grades and Studying, where increased study time drives higher grades, and both, in turn, relate to stress. The model's ability to capture such interactions may explain its superior predictive power.
+</div>
+
+<h2 id="confounding-factors-and-data-validity-concerns">Confounding Factors and Data Validity Concerns</h2>
+<div class="container-fluid p-0 m-0 mb-4">
+The dataset exhibits strong signs of confounding and redundancy among predictors. For instance, a student who spends more time studying would naturally have less time available for socializing or engaging in physical activity, highlighting the interdependent nature of these variables. This overlap complicates efforts to isolate the independent effect of each factor on stress. Additionally, the category of "Extracurriculars" lacks clarity: it's ambiguous whether this includes academic clubs, creative pursuits, volunteer work, or social events, and how it meaningfully differs from the "Social" or "Physical" activity categories. <br /> <br />
+
+A further point of concern is the perfect (100%) prediction accuracy achieved by the Random Forest model. While impressive on the surface, such performance is highly unusual and raises questions about the integrity or realism of the dataset. This, coupled with similar statistics across some variables, such as Study and Sleep, suggests the data may not fully represent real-world behavior. These patterns point to the possibility of human error in survey responses, participant misunderstanding, or even the use of synthetic or artificially clean data.
+</div>
+
+  </main>
+</body>
+  <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/"
+            aria-label="Bootstrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94"
+              role="img">
+              <title>Bootstrap</title>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                fill="currentColor"></path>
+            </svg>
+            <span class="fs-5">Bootstrap</span>
+          </a>
+          <ul class="list-unstyled small">
+            <li class="mb-2">Designed and built with all the love in the world by the <a
+                href="/docs/5.3/about/team/">Bootstrap team</a> with the help of <a
+                href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+            <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank"
+                rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/"
+                target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+            <li class="mb-2">Currently v5.3.1.</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/">Home</a></li>
+            <li class="mb-2"><a href="cv.html">CV</a></li>
+            <li class="mb-2"><a href="outreach.html">Outreach</a></li>
+            <li class="mb-2"><a href="research.html">Research</a></li>
+            <li class="mb-2"><a href="dataproj_temp.html">Data Projects</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</html>
