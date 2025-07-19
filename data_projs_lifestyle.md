@@ -6,8 +6,7 @@ permalink: /data_projs_lifestyle/
 
 <h1 class="text-start"> Analysis of Student Activities on Grades and Stress </h1>
 #### Data Source: <a href="https://www.kaggle.com/datasets/steve1215rogg/student-lifestyle-dataset" target="_blank" rel="noopener noreferrer">Kaggle Data Set</a>
-#### <a href="https://github.com/LoganBe/data-lifestyle
-t" target="_blank" rel="noopener noreferrer">Github Link</a>
+#### <a href="https://github.com/LoganBe/data-lifestyle" target="_blank" rel="noopener noreferrer">Github Link</a>
 <br>
 <div class="container-fluid p-0 m-0 mb-4">
 Students’ academic performance and stress levels are shaped by a range of interconnected factors, including study habits, sleep quality, participation in extracurricular activities, physical exercise, and social interactions. Understanding how these elements contribute to both grades and stress is crucial for developing strategies to support student well-being and success. In the following analysis, I investigate the impact of these variables on student outcomes using survey data collected from approximately 2,000 primarily Indian students over the academic year spanning August 2023 to May 2024. This dataset provides a comprehensive view of students’ experiences and behaviors, allowing for an in-depth exploration of the relationships between lifestyle factors, stress, and academic achievement.
