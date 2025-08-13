@@ -140,6 +140,65 @@ hr.class-1 {
   font-size: clamp(2rem,10vw,4rem) !important;
 }
 
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+/* Color variations */
+.tag-blue {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.tag-red {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.tag-green {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.tag-yellow {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.tag-lavender {
+  background-color: #e2d6f3;
+  color: #4b2c6f;
+}
+
+.tag-peach {
+  background-color: #ffe5d4;
+  color: #7a3b1c;
+}
+
+.tag-mint {
+  background-color: #d6f5e5;
+  color: #1d5b4f;
+}
+
+.tag-gray {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.tag-coral {
+  background-color: #fddde6;
+  color: #731f34;
+}
+
+.tag-sky {
+  background-color: #d6ebff;
+  color: #0d3d6e;
+}
 
 
 	
